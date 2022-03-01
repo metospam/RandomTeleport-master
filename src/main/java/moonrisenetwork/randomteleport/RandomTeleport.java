@@ -1,5 +1,7 @@
 package moonrisenetwork.randomteleport;
 
+import Commands.AddLocation;
+import Commands.ReloadPlugin;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +17,8 @@ public final class RandomTeleport extends JavaPlugin {
   getConfig().options().copyDefaults(true);
   prefix = ChatColor.translateAlternateColorCodes('&',getConfig().getString("prefix", "&7[&6Random&7Teleport]: "));
   saveDefaultConfig();
+  new AddLocation();
+  new ReloadPlugin();
  }
 
  @Override

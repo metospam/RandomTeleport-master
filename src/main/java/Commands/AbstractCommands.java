@@ -1,4 +1,4 @@
-package moonrisenetwork.randomteleport;
+package Commands;
 
 import moonrisenetwork.randomteleport.RandomTeleport;
 import org.bukkit.command.*;
@@ -17,7 +17,7 @@ public abstract class AbstractCommands implements CommandExecutor, TabCompleter 
         }
     }
     public abstract void execute(CommandSender sender, String label, String[] args);
-    public  List<String> complete(CommandSender sender, String[] args) {
+    public List<String> complete(CommandSender sender, String[] args) {
         return null;
     }
 
@@ -42,4 +42,3 @@ public abstract class AbstractCommands implements CommandExecutor, TabCompleter 
         return result;
     }
 }
-
